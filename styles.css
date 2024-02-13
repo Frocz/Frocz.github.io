@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #242323;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.profile-image-container {
+    position: relative;
+    overflow: hidden;
+    margin: -100px auto 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #57a0ff;; /* Sombra más sutil alrededor del section */
+}
+
+.profile-image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    position: relative;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #242323;
+    z-index: 2;
+    margin: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px hsl(214, 100%, 67%);
+    animation: fadeIn 0.4s ease;
+}
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px hsl(214, 100%, 67%);
+    animation: fadeIn 1s ease;
+
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 1.6;
+    color: rgb(221, 221, 221);
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    font-family: 'Comfortaa', sans-serif;
+    color: #fff;
+    margin-top: -15px;
+    text-shadow: 2px 2px 4px hsl(214, 100%, 67%);
+    animation: fadeIn 1s ease;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.social-icon {
+    margin: 0 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2) translate(-15px, -15px); 
+    filter: brightness(1.2);
+}
+
+
+
+#discord {
+    margin-top: -10px;
+}
+
+#youtube {
+    margin-left: 0px;
+    margin-top: 80px;
+}
+
+#github {
+    margin-left: -0px;
+    margin-top: 35px;
+}
+
+#github:hover{
+    transform: scale(1.2) translate(-17px, -17px); 
+}
+
+#discord:hover{
+    transform: scale(1.2) translate(-17px, -17px); 
+}
+
+#youtube:hover{
+    transform: scale(1.2) translate(-17px, -17px);
+}
+
+
+section:hover {
+    transform: scale(1.05);
+}
+
+section:not(:hover) {
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-image-container {
+        margin: 0 auto 10px; /* Reducimos el margen inferior para que no se salga de la pantalla en dispositivos móviles */
+        width: 100px; /* Reducimos el tamaño de la imagen para dispositivos móviles */
+        height: 100px; /* Reducimos el tamaño de la imagen para dispositivos móviles */
+    }
+
+    .social-icons {
+        margin-top: 60px; /* Reducimos el margen superior para alinear mejor los iconos en dispositivos móviles */
+    }
+
+    .social-icon {
+        margin: 0 5px; /* Reducimos el margen entre los iconos para dispositivos móviles */
+    }
+
+    .social-icon img {
+        width: 30px; /* Reducimos el tamaño de los iconos para dispositivos móviles */
+        height: 30px; /* Reducimos el tamaño de los iconos para dispositivos móviles */
+    }
+
+    #Discord {
+        margin-left: 70px;
+        margin-top: 260px;
+    }
+
+    #youtube {
+        margin-left: 0px;
+        margin-top: 260px;
+    }
+
+    #github {
+        margin-left: -70px;
+        margin-top: 260px;
+    }
+
+    #github:hover{
+        transform: scale(1.2) translate(-15px, -15px); 
+    }
+
+    #Discord:hover{
+        transform: scale(1.2) translate(-15px, -15px); 
+    }
+
+    #youtube:hover{
+        transform: scale(1.2) translate(-15px, -15px);
+    }
+        #particles-js {
+        display: none;
+    }
+
+
+}
+
+
+#Skills {
+    display: flex; /* Utilizar flexbox para organizar los elementos */
+    flex-direction: column; /* Organizar los elementos en columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    margin-top: 20px; /* Agrega un margen superior para separar el contenido de las secciones anteriores */
+    width: 600px;
+}
+
+#Skills h2 {
+    text-align: center; /* Centrar el texto del encabezado */
+    margin-bottom: 20px; /* Agrega un margen inferior al encabezado para separarlo de los elementos */
+}
+
+#Skills div {
+    display: flex; /* Utilizar flexbox para organizar los elementos */
+    justify-content: space-around; /* Distribuir los elementos uniformemente */
+    width: 100%; /* Asegurarse de que el contenido ocupe todo el ancho disponible */
+}
+
+#Skills p {
+    flex: 1;
+    text-align: center;
+    max-width: 33%; /* Establecer un ancho máximo para cada columna */
+}
+
+
+#css{
+    margin-top: 10px;
+    margin-left: -100px;
+    width: 30px;
+}
+#html{
+    margin-top: 45px;
+    margin-left: -100px;
+}
+#git{
+    margin-top: 75px;
+    margin-left: -100px;
+    width: 30px;
+}
+
+#js{
+    margin-top: 15px;
+}
+
+#c{
+    margin-top: 45px;
+}
+
+#py{
+    margin-top: 75px;
+}
+
+#sql{
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 30px;
+}
+

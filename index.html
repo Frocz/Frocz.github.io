@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page - About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezrDfACeZcLKLlM2K5zApHOESO3P5Ff8+aF5KewaNA4Jp2ZKDBz3RTo0mg9LIj7f" crossorigin="anonymous">
+    <meta name="viewport" content="width=1200">
+    <audio id="audio">
+        <source src="Song.mp3" type="audio/mp3"> 
+    </audio>
+    <script>
+        function playAudio() {
+            document.getElementById("audio").play();
+        }
+    </script>
+</head>
+<body onclick="playAudio()">
+    <section id="Skills">
+        <h2>My Skills</h2>
+        <div>
+            <p id="Middle">
+                Middle
+                <br><br>
+                <img id="html" src="html.png" alt="HTML" style="margin-top: 5px; margin-left: -200px;">
+                <br>
+                <img id="js" src="js.png" alt="JS" style="margin-top: 40px; margin-left: -200px;">
+                <br>
+            </p>
+            
+            <p id="Senior" style="margin-top: -3px;">
+                Senior
+                <br><br><br>
+                <img id="C#" src="c-sharp.png" alt="C#" style="margin-top: 0px; margin-left: 0px;">
+                <br>
+                <img id="python" src="python.png" alt="Python" style="margin-top: 40px; margin-left: 0px;">
+                <br>
+                <img id="go" src="golang2.png" alt="GOLANG" style="margin-top: 80px; margin-left: -3px;">
+                <br>
+            </p>
+            
+            <p id="Junior">
+                Junior
+                <br><br>
+                <img id="sql" src="database.png" alt="SQL" style="margin-top: 5px; margin-left: 203px;">
+                <br>
+                <img id="css" src="css-3.png" alt="CSS" style="margin-top: 40px; margin-left: 198px;">
+            </p>
+        </div>
+    </section>
+    <div id="particles-js"></div>
+
+    <section id="about">
+        <div class="profile-image-container">
+            <img src="Frocz.png" alt="Tu Foto">
+        </div>
+        <h1>About Me</h1>
+        <p>I identify as a student dedicated to programming, electronics, digital forensics, and reversing techniques.</p> 
+        <p>I am committed to continuous growth, constantly seeking to broaden my expertise in these areas and beyond.</p>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+            <a href="https://discord.gg/wsh27qYFsE" class="social-icon">
+                <img id="discord" src="Discord.png" alt="Discord Icon">
+            </a>            
+            </a>
+            <a href="https://www.youtube.com/@Frocz" class="social-icon">
+                <img id="youtube" src="Youtube.png" alt="Youtube Icon">
+            </a>
+            <a href="https://github.com/Stafu1896" class="social-icon">
+                <img id="github" src="Github.png" alt="Github Icon">
+            </a>
+        </div>
+    </section>
+    
+    <div id="particles-js"></div>
+
+    <script src="particles.min.js"></script>
+    <script>
+    particlesJS(
+        {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#57a0ff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 205.17838682439088,
+      "color": "#71aefc",
+      "opacity": 0.7,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 1200,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": false
+}
+    )
+    </script>
+</body>
+</html>
